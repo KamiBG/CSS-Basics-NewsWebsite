@@ -1,0 +1,77 @@
+﻿body {
+    padding: 0;
+    margin: 0 auto;
+    font-family: Calibri;
+}
+.body {
+    width: 640px;
+    height: 355px;
+    background-color: rgb(30, 55, 65);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+nav ul {
+    float: left;
+    margin: 10px;
+    margin-left: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(75, 95, 103);
+    color: rgb(139, 173, 167);
+}
+
+nav > ul > li > ul > li { /* OR .submenu li*/
+    list-style-type: none;
+    padding: 10px;
+    background-color: rgb(30, 55, 65);
+    color: rgb(142, 165, 179);
+    border-bottom: 1px solid rgba(75, 95, 103, 0.5);
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu {
+    display: none;
+    padding-top: 10px;
+    font-size: 0.9em;
+    line-height: 1em;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 37%;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav > ul > li:hover {
+    color: white;
+    background-color: rgb(30, 55, 65);
+}
+
+nav .submenu li:hover {
+    color: white;
+    background-color: rgb(0, 150, 140);
+}
+
+nav .submenu li:hover .subsubmenu {
+    display: block;
+}
+
+.subsubmenu {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
